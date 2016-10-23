@@ -11,7 +11,7 @@ We used unidirectional network links.
 Potentially a provider could write to any of the available broker. <br>
 A consumer could also read from any broker, but it's recommended that the consumers read from one broker only.
 
-![activemq cluster of 4 members](https://github.com/mthirion/activemq/blob/master/cluster/brokers-flat4.png)
+![activemq cluster of 4 members](https://github.com/mthirion/activemq/blob/master/cluster/brokers-flat4bis.png)
 
 
 ## Testing
@@ -32,5 +32,5 @@ For persistent messages in production, each of the brokers should have at least 
 For a maximum of high availability, we'd use 3 brokers (instead of 4 described above) over 3 nodes; each broker would have 2 slaves located on another VM. <br>
 With that configuration, the MQ backbone still works under a situation where a failing infrastructure is reduced to one single working VM out of 3.
 
-![activemq cluster : 3 members HA ](https://github.com/mthirion/activemq/blob/master/cluster/brokers-flat4bis.png)
+![activemq cluster : 3 members HA ](https://github.com/mthirion/activemq/blob/master/cluster/brokers-flat4ha.png)
 
